@@ -1,0 +1,170 @@
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[hidelinks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.70in,top=.9in,right=0.70in,bottom=0.6in]{geometry}
+\textheight=10in
+
+\pagestyle{empty}
+\raggedright
+
+%\renewcommand{\encodingdefahttps://www.overleaf.com/project/64f90d8c02cbbd0fd60bb63cult}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+        {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+        { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+    {\Huge \scshape {#1}}\\
+    #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+    {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    \vspace*{-30pt}
+
+
+
+%==== Profile ====%
+    \vspace*{-20pt}
+    \begin{center}
+    {\Huge \scshape {Daniela Ramos Garcia}}\\
+    \vspace{2mm}
+    {\normalsize {+52 9611382118} $\cdot${ \href{mailto: daniela.ramosgarcia@outlook.com}{daniela.ramosgarcia@outlook.com} $\cdot$  \href{https://github.com/danielaramosgarcia}{github.com/danielaramosgarcia} $\cdot$ \href{https://www.linkedin.com/in/daniela-ramos-garcia/}{www.linkedin.com/in/daniela-ramos-garcia/} $\cdot$ \href{ https://www.cloudskillsboost.google/public_profiles/b21b25e4-9a28-4a6f-a8bd- 7eeb556ea04a}{Google Cloud Skill Boost public profile}
+    \\}}
+    \end{center}
+
+%==== Experience ====%
+    \header{Experience}
+    \vspace{1mm}
+    \textbf{\href{https://www.uber.com/}{Uber Technologies Inc}} \hfill June 2023 - Sep. 2023\\
+    \textit{UberSTAR Software Engineering Intern (Web dev)} \hfill San Francisco, CA, USA.\\
+    \vspace{-1.5mm}
+    \begin{itemize} \itemsep 1pt
+    \item Developed a web application utilizing React and JavaScript as part of the team's internal tool, enabling team members to configure the Robots.txt file for both UberEats and Postmates platforms without necessitating programming expertise.
+    \item Engineered both frontend and backend components to facilitate RPC requests for the purpose of data retrieval and modification within the UI.
+    \end{itemize}
+
+    \textbf{\href{https://suministrostuxtla.com.mx}{Suministros Tuxtla S.A de C.V.}} \hfill May 2021 - Aug 2021\\
+    \textit{IT Assistant} \hfill Chiapas, México.\\
+    \vspace{-1.5mm}
+    \begin{itemize} \itemsep -1pt
+    \item  Use of macros in excel to accelerate and alleviate creation of sale reports. Decrease of the time required to make those reports from \textbf{4 hours to 20 minutes}, allowing management to
+    assure better decision-making regarding sales personal.
+    \item Implementations of SAE ERP software on a new sale location.
+    \end{itemize}
+
+    \vspace{-1mm}
+    \header{Skills}
+    \vspace{1mm}
+
+    \begin{tabular}{ l l }
+
+        \textbf{Languages:} & JavaScript, TypeScript, C++, Python, Swift\\
+        \vspace{1mm}
+        \textbf{Technologies:} & React, Node.js, MySQL \\
+    \end{tabular}
+    \vspace{2mm}
+
+    \header{Software Engineering Projects}
+    \vspace{1mm}
+    {\textbf{AtosLearning}} {\sl React, ASP.NET, C\#, Unity, JavaScript, MySQL, Azure}
+    \vspace{-1mm}
+    \begin{itemize} \itemsep -1pt
+    \item Architected a web platform within the ASP.NET environment, functioning as a dual-client service catering to educators and students to facilitate the creation and assignment of quizzes while offering comprehensive data analytics on student performance.
+    \item Developed a Unity game using C\#, providing students with a gamified format for quiz completion.
+    \item Engineered an API to establish seamless connectivity between the web application and a database, enabling data transmission and retrieval.
+    \end{itemize}
+    {\textbf{SmartPark}} {\sl MySQL, Arduino, React, SQL Workbench, IoT}
+    \vspace{-1mm}
+    \begin{itemize} \itemsep -1pt
+    \item Built prototype for a smart parking system, amalgamated circuit connections with Arduino programming to establish an internet-connected framework and show data on web application.
+    \item Transmitted data to an SQL database,and presenting this information on a web page as chart table and statistics for data analysis. Implementation of physical circuit connections, underscoring IoT principles.
+    \end{itemize}
+    {\textbf{Third place at Banorte challenge at 2022 Hackathon}}
+    \vspace{-1mm}
+    \begin{itemize} \itemsep -1pt
+    \item Participated in the 2022 ITESM Hackathon and won third place in the Banorte challenge by helping improve the company app interface with a proposition to make it more user friendly.
+    \end{itemize}
+
+    \header{Other Personal Projects}
+    \vspace{1mm}
+
+    {\textbf{Formula One Simulation}} \\
+    \vspace{-1mm}
+    \begin{itemize} \itemsep 1pt
+    \item Created a drift simulation of a formula one circuit using MATLAB App Designer.
+    \end{itemize}
+    \vspace{-1mm}
+    {\textbf{LeanSixSigma Whitebelt certification.}}\\
+    \vspace{2mm}
+    {\textbf{Attend the 2019 CNL. National summit of Leadership. ITESM.}}\\
+    \vspace{2mm}
+    {\textbf{Python videogame with graphic interface}}
+    \vspace{-1mm}
+    \begin{itemize} \itemsep 1pt
+    \item “Shrimp game" is a board game made in python with Turtle library for user interface.
+    \end{itemize}
+
+
+%==== Education ====%
+    \header{Education}
+    \vspace{1mm}
+    \textbf{Tec de Monterrey. ITESM. B.S. in Computer Science and Tecnology (Eng).}\hfill Aug. 2021 - May 2025\\
+    \begin{itemize} \itemsep -1pt
+    \item Academic Talent scholarship.
+    \item Member of WIT. Student society of Women In Tech.
+    \item Member of SAITC. Student society of Engineers in computer science.
+    \item Member of Vanttec. Student Association building autonomous automobiles.
+    \end{itemize}
+    \vspace{2mm}
+    “From then on, when anything went wrong with a computer, we said it has bugs in it”-A quote from Grace Hopper that I really like.
+
+\end{document}
