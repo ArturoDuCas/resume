@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.23)  25 DEC 2023 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.23)  25 DEC 2023 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -376,7 +376,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [1
 
 {C:/Users/Arturo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(C:/Users\Arturo\Desktop\Proyectos\LaTeX\out\jacksTemplate.aux)
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[2] (C:/Users\Arturo\Desktop\Proyectos\LaTeX\out\jacksTemplate.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-08>
@@ -389,13 +394,13 @@ Package rerunfilecheck Info: File `jacksTemplate.out' has not changed.
 (rerunfilecheck)             Checksum: DACA9D15585DDD17075EC0E24EE95FAE;579.
  ) 
 Here is how much of TeX's memory you used:
- 10637 strings out of 474491
- 169564 string characters out of 5743361
- 1958473 words of memory out of 5000000
+ 10638 strings out of 474491
+ 169570 string characters out of 5743361
+ 1956473 words of memory out of 5000000
  32788 multiletter control sequences out of 15000+600000
  563661 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,299b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,308b,704s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Arturo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb><C:/Users/Arturo/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb><C:/Users/Arturo/AppData/Local/Programs/MiKTeX/fonts/type
@@ -405,9 +410,9 @@ ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Arturo/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Arturo/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on C:/Users\Arturo\Desktop\Proyectos\LaTeX\out\jacksTemplate.pdf
- (1 page, 114864 bytes).
+ (2 pages, 117421 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
