@@ -26,13 +26,13 @@ jobs:
       - name: Generate preview from PDF
         run: |
           mkdir -p preview
-          convert -density 150 resume_en.pdf[0] -quality 90 preview/preview.jpg
+          convert -density 150 resume_en.pdf[0] -quality 90 -background white -alpha remove preview/preview.png
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add preview/preview.jpg
+          git add preview/preview.png
           git commit -m "Automated preview update"
           git push
         env:
