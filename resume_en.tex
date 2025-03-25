@@ -3,9 +3,7 @@
 % Author : Arturo Duran Castillo
 % Template based on Jake Gutierrez's version
 %------------------------
-% Last Updated: december 23th 2023
-% Future Update Notes: No planned changes
-%------------------------
+
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -21,18 +19,6 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -87,9 +73,9 @@
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \begin{tabular*}{0.92\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-1pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -103,8 +89,10 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.13in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, label={}]}
+\newcommand{\resumeSubSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -115,13 +103,8 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-\textbf{\Huge \scshape Arturo Duran Castillo} \\ \vspace{1pt}
+\textbf{\Huge \scshape Arturo Durán Castillo} \\ \vspace{1pt}
 \small +52 417-110-9561 $|$ \href{mailto:ducasarturo@gmail.com}{\underline{ducasarturo@gmail.com}} $|$
 \href{https://www.linkedin.com/in/arturoducas/}{\underline{linkedin.com/in/arturoducas}} $|$
 \href{https://github.com/ArturoDuCas}{\underline{github.com/ArturoDuCas}} $|$
@@ -136,7 +119,7 @@
 {Tecnológico de Monterrey, ITESM}{Monterrey, Nuevo León}
 {B.S in Computer Science and Technology}{Expected Graduation: June 2025}
 \resumeItemListStart
-\resumeItem{GPA: 3.9/4.0 (equiv. 97.6/100)}
+\resumeItem{GPA: 3.9/4.0 (equiv. 98.2/100)}
 \resumeItem{Scholarships: \href{https://drive.google.com/file/d/1b5jrPn-a_eLqLJsYaLeC222-oznbXLQm/view?usp=sharing}{\underline{Academic Talent Scholarship}}}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -146,20 +129,87 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
+
+% SOFTTEK INTERNSHIP
 \resumeSubheading
 {Software Developer Intern}{June 2024 - Present}
 {Softtek}{Monterrey, Nuevo León}
+
+\resumeSubSubHeadingListStart
+
+% NPX TOOL PROJECT
+\resumeSubSubheading
+{\textbf{Codemod Automation NPX Tool} $|$ \emph{Node.js, Yargs, Jscodeshift, Express.js, Firebase}}{Nov 2024 -- Present}
 \resumeItemListStart
-\resumeItem{I designed and developed an NPX tool that integrates various codemods using jscodeshift to automate the migration of projects with deprecated dependencies.}
-\resumeItem{I integrated the tool with GitHub through a GitHub App to enable automated actions like creating pull requests and issues within the repository.}
-\resumeItem{The tool was successfully utilized in a project, analyzing 340 files and modifying over 5000 lines of code, reducing the migration time from more than 14 hours to less than 2 minutes.}
+\resumeItem{
+    Led the design and development of an NPX tool to streamline the distribution and execution of 
+    codemods using \textit{jscodeshift}, accelerating security fixes, code migrations, and automated 
+    refactorings for large-scale projects.
+    }
+\resumeItem{
+    Proposed and implemented a local server-based CLI authentication flow using \textit{Express.js} 
+    and \textit{Firebase}, enabling a secure and user-friendly experience while also 
+    supporting user metrics tracking and analysis.
+    }
+\resumeItem{
+    Deployed the tool in a major financial institution’s monorepo, 
+    refactoring over \textbf{5,000 lines of code} across \textbf{340 files}, and reducing 
+    migration time from \textbf{14+ hours} to under \textbf{2 minutes} through full automation.
+    }
 \resumeItemListEnd
+
+\vspace{0.5em}
+
+% PHARMACY PROJECT
+\resumeSubSubheading
+{\textbf{Enterprise Platform Development} $|$ \emph{React, Microsoft SQL Server, Firebase}}{Sep 2024 -- Present}
+\resumeItemListStart
+\resumeItem{
+    Developed core modules for a large-scale product platform serving a major pharmacy chain, 
+    collaborating with cross-functional teams to ensure a scalable architecture and seamless 
+    user experience.
+    }
+\resumeItem{
+    Implemented a stored procedure-based bulk upload system in \textit{SQL Server}, reducing ingestion 
+    time from \textbf{15+ minutes} to under \textbf{10 seconds} per \textbf{1,000 products}, significantly boosting operational 
+    efficiency.
+    }
+\resumeItemListEnd
+
+\vspace{0.5em}
+
+% MIGRATION PROJECT
+\resumeSubSubheading
+{\textbf{Virtual Learning Platform Migration \& Update} $|$ \emph{React, Vite}}{Jun 2024 -- Aug 2024}
+\resumeItemListStart
+\resumeItem{
+    Migrated and modernized a virtual learning platform used by multiple clients—including 
+    a major global enterprise—serving \textbf{700+ registered users}.
+    }
+\resumeItem{
+    Transitioned the platform from \textit{Create React App} to \textit{Vite}, upgrading \textit{React} from 
+    \textbf{v17.0.2} to \textbf{v18.2.0} and \textit{Material UI} from \textbf{v4} to \textbf{v5}, resolving 
+    library incompatibilities and improving build performance and developer experience.
+    }
+\resumeItemListEnd
+
+
+\resumeSubSubHeadingListEnd
+
+
+% SWIRVLE INTERNSHIP
 \resumeSubheading
 {Web Developer Intern}{June 2023 -- Aug. 2023}
 {Swirvle}{Monterrey, Nuevo León}
 \resumeItemListStart
-\resumeItem{I developed employee performance indicators for around 35 affiliated companies using React and Firebase, enabling companies to identify performance information for each of their employees.}
-\resumeItem{I initiated the development of a new feature called "Automations," aimed at providing companies with a tool to configure automatic actions triggered by specific events, such as a new purchase.}
+\resumeItem{
+    Developed employee performance indicators using \textit{React} and \textit{Firebase} for 
+    \textbf{$\sim$35 affiliated companies}, enabling real-time insights into individual employee performance.
+    }
+% \resumeItem{
+%     Initiated the design and development of an “Automations” feature, allowing companies to configure trigger-based actions 
+%     (e.g., upon new purchases), laying the foundation for scalable business process automation.
+%     }
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -168,12 +218,12 @@
 \section{Projects}
 \resumeSubHeadingListStart
 
-\resumeProjectHeading
-{\textbf{Research on LLMs for Aphasia Diagnosis} $|$ \emph{Hugging Face}}{Feb 2024 -- June 2024}
-\resumeItemListStart
-\resumeItem{I conducted research in collaboration with a neuropediatrician on Large Language Models (LLMs) for their application in the diagnosis of aphasia.}
-\resumeItem{I compared over 10 text generation and speech-to-text models using the Hugging Face ecosystem, running them locally to evaluate their capabilities and performance specifically for this task, a report was generated with the comparative analysis.}
-\resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{Research on LLMs for Aphasia Diagnosis} $|$ \emph{Hugging Face}}{Feb 2024 -- June 2024}
+% \resumeItemListStart
+% \resumeItem{I conducted research in collaboration with a neuropediatrician on Large Language Models (LLMs) for their application in the diagnosis of aphasia.}
+% \resumeItem{I compared over 10 text generation and speech-to-text models using the Hugging Face ecosystem, running them locally to evaluate their capabilities and performance specifically for this task.}
+% \resumeItemListEnd
 
 
 
@@ -190,9 +240,9 @@
 \resumeProjectHeading
 {\textbf{Multi-Agent System for Harvesting Process Optimization} $|$ \emph{Unity, Node.js, WebSocket}}{Aug 2023 -- Sep 2023}
 \resumeItemListStart
-\resumeItem{Collaborated with John Deere to develop a 3D Unity simulation to optimize the harvesting process.}
-\resumeItem{Developed a React-based web interface for simulation parameter input and real-time monitoring of vehicle metrics using WebSocket communication.}
-\resumeItem{Implemented advanced algorithms, including a modified Traveling Salesman Problem for harvesters' routes and Q-learning for tractors' crop collection paths, optimizing harvesting efficiency.}
+\resumeItem{Collaborated with John Deere to build a 3D simulation in \textit{Unity} for optimizing agricultural harvesting processes.}
+\resumeItem{Built a \textit{React}-based web interface for real-time metric monitoring and parameter input via \textit{WebSocket} communication.}
+\resumeItem{Implemented intelligent routing algorithms, including a modified \textit{Traveling Salesman Problem} for harvesters and \textit{Q-learning} for tractor coordination, improving collection efficiency.}
 \resumeItemListEnd
 % Multi-Agent System End
 
@@ -228,15 +278,14 @@
 
 % TRU PROGRAM START
 \resumeSubheading
-{Intercultural, Sustainability and Global Citizenship Program
-}{Dec 2023}
+{Intercultural, Sustainability and Global Citizenship Program}{Dec 2023}
 {Thompson Rivers University}{Kamloops, British Columbia}
 \resumeItemListStart
-\resumeItem{Obtained a scholarship from the state of Guanajuato, Mexico to attend this program. }
-\resumeItem{Active participation in intercultural environments, where I honed intercultural communication and teamwork skills}
-\resumeItem{Promoted global awareness and sustainability, vital for future project development. Gained insights on global citizenship, integrating diverse perspectives to tackle international issues.}
+\resumeItem{Awarded a merit-based scholarship by the state of Guanajuato, Mexico, to participate in an international program focused on sustainability and global citizenship.}
+\resumeItem{Collaborated in multicultural teams, strengthening communication, adaptability, and cross-cultural awareness.}
+\resumeItem{Explored global challenges and sustainability practices, gaining insights essential for building socially responsible and globally aware solutions.}
 \resumeItemListEnd
-% TRU PROGRAM END
+
 
 %% VIRTUAL LIBRARY START
 %\resumeSubheading
